@@ -82,6 +82,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 .search-form__label{
   width: fit-content;
@@ -124,10 +125,16 @@ input[type='checkbox']:checked + span {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
   min-width: 194px;
+  max-height: 34px;
+}
+
+.more-button {
+  min-width: 399px;
   max-height: 34px;
 }
 
