@@ -92,8 +92,8 @@ fieldset {
   width: fit-content;
 }
 
-.search-form__label .search-form__textfield:has(:focus-visible) {
-  outline: 1px solid #FFF;
+.search-form__label:has(:focus-visible) {
+  border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
 }
 
