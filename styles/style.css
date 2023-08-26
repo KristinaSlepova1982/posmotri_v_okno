@@ -40,6 +40,7 @@ ul,
 ol {
   list-style: none;
 }
+
 button:focus {
   outline: none;
   box-shadow: none;
@@ -94,7 +95,7 @@ fieldset {
   margin-left: 15px;
 }
 
-.search-form__label{
+.search-form__label {
   width: fit-content;
 }
 
@@ -102,11 +103,16 @@ fieldset {
   border-bottom: 1px solid #FFF;
 }
 
-.search-form__label:has(:focus-visible) {
+
+.search-form__fieldset > .search-form__label:first-of-type:hover {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
 }
 
+/*.search-form__label:has(:focus-visible) {*/
+/*  border-top: 1px solid #FFF;*/
+/*  border-bottom: 1px solid #FFF;*/
+/*}*/
 .search-form__textfield:focus {
   outline: none;
 }
@@ -197,7 +203,7 @@ input[type='checkbox']:checked + span {
 }
 
 .content__list::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .content__list::-webkit-scrollbar-thumb {
