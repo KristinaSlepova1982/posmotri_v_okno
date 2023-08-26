@@ -39,6 +39,10 @@ ul,
 ol {
   list-style: none;
 }
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 .visually-hidden {
   position: absolute;
@@ -90,6 +94,10 @@ fieldset {
 
 .search-form__label{
   width: fit-content;
+}
+
+.search-form__checkbox-list .search-form__label:hover {
+  border-bottom: 1px solid #FFF;
 }
 
 .search-form__label:has(:focus-visible) {
