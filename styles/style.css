@@ -141,7 +141,7 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  position: absolute;
+  /*position: absolute;*/
   display: inline-block;
   border: 1px solid #FFF;
   width: 19px;
