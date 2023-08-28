@@ -62,7 +62,7 @@ button:focus {
   justify-content: center;
   gap: 30px;
   min-width: 1140px;
-  max-height: 534px;
+  min-height: 534px;
 }
 
 .search-form {
@@ -100,13 +100,8 @@ fieldset {
   width: fit-content;
 }
 
-.search-form__checkbox-list .search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   border-bottom: 1px solid #FFF;
-}
-
-
-.search-form__fieldset > .search-form__label:first-of-type:focus-visible {
-  border: 1px solid #FFF;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -120,7 +115,7 @@ fieldset {
 .search-form__textfield {
   min-width: 225px;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.70);
+  color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -151,8 +146,10 @@ fieldset {
 }
 
 input[type='checkbox']:checked + span {
-  background-image: url("./img/chekbox_check.svg");
-  background-position: center;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: #FFF;
 }
 
 .search-form__label-text {
