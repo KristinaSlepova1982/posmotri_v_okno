@@ -82,7 +82,7 @@ fieldset {
   font-weight: 400;
   line-height: normal;
   appearance: none;
-  padding-bottom: 5px;
+  padding: 8px 0 9px 0;
 }
 
 .search-form__checkbox-list {
@@ -207,8 +207,8 @@ input[type='checkbox']:checked + span {
 }
 
 .search-form__submit-button {
-  min-width: 194px;
-  max-height: 34px;
+  width: 200px;
+  height: 35px;
 
 }
 
