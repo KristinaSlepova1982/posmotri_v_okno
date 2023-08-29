@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: none;
+
+}
 html {
   block-size: 100%;
 }
@@ -105,10 +110,6 @@ fieldset {
   outline: 1px solid #FFF;
 }
 
-.search-form__textfield:focus {
-  outline: none;
-}
-
 .search-form__textfield {
   min-width: 225px;
   background-color: transparent;
@@ -132,7 +133,6 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  /*position: absolute;*/
   display: inline-block;
   border: 1px solid #FFF;
   width: 19px;
@@ -204,7 +204,6 @@ input[type='checkbox']:checked + span {
 
 .button:hover {
   text-decoration: underline;
-  text-decoration-color: #545050;
 }
 
 .search-form__submit-button {
@@ -218,11 +217,6 @@ input[type='checkbox']:checked + span {
   max-height: 34px;
 }
 
-button:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 .button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
@@ -232,7 +226,6 @@ button:focus {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*overflow: hidden;*/
   max-height: 298px;
   overflow: auto;
 }
@@ -250,10 +243,6 @@ button:focus {
   outline: 1px solid slategrey;
 }
 
-/*.content__list:hover {*/
-/*  overflow: auto;*/
-/*}*/
-
 .content__list-item{
   margin: 5px;
 }
@@ -266,9 +255,19 @@ button:focus {
   text-decoration: none;
 }
 
-.content__card-link:focus {
-  outline: none;
-  box-shadow: none;
+.content__card-link:hover {
+  text-decoration-line: underline;
+  color: #FFF;
+}
+
+.content__card-link:focus-visible {
+  display: block;
+  outline: 1px solid #FFF;
+}
+
+.content__card-link_current {
+  display: block;
+  background-color: #545050;
 }
 
 .content__video-card-title {
@@ -306,7 +305,7 @@ button:focus {
   text-transform: uppercase;
 }
 
-.title .content__accent:first-child {
+.content__accent {
   color: #545050;
 }
 
@@ -327,6 +326,7 @@ button:focus {
 .result__video {
   min-width: inherit;
   max-height: inherit;
+  object-fit: cover;
 }
 
 .content__video-card {
@@ -339,10 +339,9 @@ button:focus {
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px;
-  max-height: 103px;
-  background-size: cover;
-  background-position: center;
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
 }
 
 .content__video-card-description-container {
@@ -350,11 +349,4 @@ button:focus {
   height: 100%;
 }
 
-.content__video-card-description-container:hover h2{
-  text-decoration-line: underline;
-}
-
-.content__video-card-description-container:hover p{
-  text-decoration-line: underline;
-}
 
