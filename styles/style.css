@@ -214,7 +214,7 @@ input[type='checkbox']:checked + span {
 
 .more-button {
   min-width: 399px;
-  max-height: 34px;
+  min-height: 34px;
 }
 
 .button:focus-visible {
