@@ -74,6 +74,7 @@ fieldset {
   font-weight: 400;
   line-height: normal;
   appearance: none;
+  margin-bottom: 4px;
 }
 
 .search-form__checkbox-list {
@@ -81,7 +82,7 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
-  gap: 16px;
+  gap: 12px;
 }
 
 .search-form__label {
@@ -144,11 +145,9 @@ fieldset {
   content: " ";
   display: none;
   position: relative;
-  left: 1px;
-  top: 1px;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #1b1919;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #1b1919;
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
@@ -171,7 +170,6 @@ input[type='checkbox']:checked + span {
 
 .search-form__label input {
   cursor: pointer;
-  margin-top: 4px;
 }
 
 .button {
