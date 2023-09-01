@@ -169,6 +169,7 @@ input[type='checkbox']:checked + span {
 }
 
 .search-form__label input {
+  font-family: Fira Sans Condensed,sans-serif;
   cursor: pointer;
 }
 
@@ -185,6 +186,7 @@ input[type='checkbox']:checked + span {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  font-family: Fira Sans Condensed,sans-serif;
 }
 
 .button:focus {
@@ -282,6 +284,7 @@ input[type='checkbox']:checked + span {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 80%;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -346,3 +349,12 @@ input[type='checkbox']:checked + span {
   object-fit: cover;
 }
 
+.content__video-card-description-container {
+  padding: 7px 0 0 2px;
+  margin-right: 2px;
+}
+
+.more-button {
+  margin-top: 32px;
+  margin-bottom: 3px;
+}
